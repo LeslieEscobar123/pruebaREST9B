@@ -1,6 +1,10 @@
+const app = require('./app/app')
+const config = require('./app/config/configuracion')
 const express = require ('express')
-const app = express();
-const PORT = 3000;
-app.listen(PORT,()=>{
-    console.log ("aplicacion corriendo en puerto", PORT);
+const conexion = require('./app/config/conexion')
+
+conexion.connect();
+
+app.listen(config.PORT,()=>{
+    console.log ("aplicacion corriendo en puerto",config.PORT);
 })
