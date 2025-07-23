@@ -18,5 +18,5 @@ const ejerciciosEschema =mongoose.Schema ({
     }
 })
 
-const ejercicio = mongoose.model('Ejercicios',ejerciciosEschema)
+const ejercicio = mongoose.model('ejercicios',ejerciciosEschema)
 module.exports= ejercicio
